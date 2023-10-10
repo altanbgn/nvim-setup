@@ -1,5 +1,10 @@
 vim.api.nvim_set_option("clipboard", "unnamed")
-vim.g.netrw_listing_style = 1
+
+vim.g.netrw_banner = 0
+vim.g.netrw_keepdir = 0
+vim.g.netrw_liststyle = 3
+vim.g.netrw_sizestyle = "H"
+
 vim.opt.cursorline = true
 
 vim.opt.number = true

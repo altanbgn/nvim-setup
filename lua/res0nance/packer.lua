@@ -15,7 +15,11 @@ return require("packer").startup(function(use)
   use("nvim-lualine/lualine.nvim")
 
   -- Indent lines and indicators
-  use({ "lukas-reineke/indent-blankline.nvim", main = "ibl", opts = {} })
+  use({
+    "lukas-reineke/indent-blankline.nvim",
+    main = "ibl",
+    opts = {}
+  })
 
   -- Colorscheme
   use({ "rose-pine/neovim", as = "rose-pine" })
@@ -26,22 +30,15 @@ return require("packer").startup(function(use)
 
   -- Git
   use("tpope/vim-fugitive")
-  use({
-    "lewis6991/gitsigns.nvim",
-    run = function()
-      require("gitsigns").setup()
-    end
-  })
+  use("lewis6991/gitsigns.nvim")
 
   -- Utility
   use("nvim-tree/nvim-web-devicons")
-  use({ "nvim-telescope/telescope.nvim", tag = "0.1.2" })
   use("folke/trouble.nvim")
+  use("numToStr/Comment.nvim")
   use({
-    "numToStr/Comment.nvim",
-    run = function()
-      require("gitsigns").setup()
-    end
+    "nvim-telescope/telescope.nvim",
+    tag = "0.1.2"
   })
 
   use({
