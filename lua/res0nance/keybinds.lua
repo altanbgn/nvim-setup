@@ -23,8 +23,8 @@ vim.keymap.set("n", "<leader>f", vim.lsp.buf.format)
 vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>//gI<Left><Left><Left>]])
 vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
 
-vim.keymap.set("n", "<leader>po", "<cmd>e ~/.config/nvim/lua/res0nance/packer.lua<CR>");
+vim.keymap.set("n", "<leader>fp", "<cmd>e ~/.config/nvim/lua/res0nance/packer.lua<CR>");
 vim.keymap.set("n", "<leader>mir", "<cmd>CellularAutomaton make_it_rain<CR>");
 
 vim.keymap.set("n", "<leader>c", "<cmd>nohl<CR>")
-vim.keymap.set("n", "<leader>pv","<cmd>Ex<CR>")
+vim.keymap.set("n", "<leader>fe", "<cmd>Ex<CR>")

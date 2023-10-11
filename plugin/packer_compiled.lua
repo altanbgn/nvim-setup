@@ -119,6 +119,11 @@ _G.packer_plugins = {
     path = "/Users/altanbagana/.local/share/nvim/site/pack/packer/start/copilot.vim",
     url = "https://github.com/github/copilot.vim"
   },
+  ["dashboard-nvim"] = {
+    loaded = true,
+    path = "/Users/altanbagana/.local/share/nvim/site/pack/packer/start/dashboard-nvim",
+    url = "https://github.com/glepnir/dashboard-nvim"
+  },
   ["friendly-snippets"] = {
     loaded = true,
     path = "/Users/altanbagana/.local/share/nvim/site/pack/packer/start/friendly-snippets",
@@ -183,11 +188,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/altanbagana/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
     url = "https://github.com/nvim-tree/nvim-web-devicons"
-  },
-  ["oxocarbon.nvim"] = {
-    loaded = true,
-    path = "/Users/altanbagana/.local/share/nvim/site/pack/packer/start/oxocarbon.nvim",
-    url = "https://github.com/nyoom-engineering/oxocarbon.nvim"
   },
   ["packer.nvim"] = {
     loaded = true,

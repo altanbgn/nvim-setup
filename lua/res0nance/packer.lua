@@ -7,6 +7,9 @@ return require("packer").startup(function(use)
   -- Packer can manage itself
   use("wbthomason/packer.nvim")
 
+  -- Startup
+  use("glepnir/dashboard-nvim")
+
   use("theprimeagen/harpoon")
   use("mbbill/undotree")
   use("nvim-treesitter/nvim-treesitter-context")
@@ -23,7 +26,6 @@ return require("packer").startup(function(use)
 
   -- Colorscheme
   use({ "rose-pine/neovim", as = "rose-pine" })
-  use("nyoom-engineering/oxocarbon.nvim")
 
   -- Dependant
   use("nvim-lua/plenary.nvim")
