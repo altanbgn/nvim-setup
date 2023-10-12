@@ -8,7 +8,7 @@ return require("packer").startup(function(use)
   use("wbthomason/packer.nvim")
 
   -- Startup
-  use("glepnir/dashboard-nvim")
+  use("goolord/alpha-nvim")
 
   use("theprimeagen/harpoon")
   use("mbbill/undotree")
