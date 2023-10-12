@@ -109,7 +109,6 @@ end
 local function randomize_header()
   math.randomseed(os.time())
   local index = math.random(1, 3)
-  print(index)
   return header_generator(index)
 end
 
@@ -130,4 +129,4 @@ dashboard.section.header.opts.hl = "Label"
 
 alpha.setup(dashboard.opts)
 
-vim.keymap.set("n", "<leader>db", "<cmd>Alpha<CR>")
+vim.keymap.set("n", "<leader>db", "<cmd>AlphaRedraw<CR>")

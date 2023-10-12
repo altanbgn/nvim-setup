@@ -17,6 +17,9 @@ return require("packer").startup(function(use)
   use("eandrju/cellular-automaton.nvim")
   use("nvim-lualine/lualine.nvim")
 
+  -- Note taking
+  use("epwalsh/obsidian.nvim")
+
   -- Indent lines and indicators
   use({
     "lukas-reineke/indent-blankline.nvim",
