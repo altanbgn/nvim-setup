@@ -1,5 +1,8 @@
-local alpha = require("alpha")
 local dashboard = require("alpha.themes.dashboard")
+local status_ok, alpha = pcall(require, "alpha")
+if not status_ok then
+  return
+end
 
 local header_generator = function(index)
   if index == 1
@@ -125,8 +128,12 @@ local buttons = {
 
 dashboard.section.buttons.val = buttons
 dashboard.section.header.val = randomize_header()
+dashboard.section.footer.val = "The real things are apt to be deviant"
 dashboard.section.header.opts.hl = "Label"
+dashboard.opts.opts.noautocmd = true
 
 alpha.setup(dashboard.opts)
 
-vim.keymap.set("n", "<leader>db", "<cmd>AlphaRedraw<CR>")
+-- Disable folding in alpha buffer
+vim.cmd("autocmd FileType alpha setlocal nofoldenable")
+vim.keymap.set("n", "<leader>db", "<cmd>Alpha<CR>")
