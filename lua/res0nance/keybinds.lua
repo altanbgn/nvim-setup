@@ -29,3 +29,6 @@ vim.keymap.set("n", "<leader>mir", "<cmd>CellularAutomaton make_it_rain<CR>");
 
 vim.keymap.set("n", "<leader>c", "<cmd>nohl<CR>")
 vim.keymap.set("n", "<leader>fe", "<cmd>Ex<CR>")
+
+vim.keymap.set("n", "n", "j")
+vim.keymap.set("n", "e", "k")
