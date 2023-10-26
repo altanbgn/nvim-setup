@@ -1,13 +1,13 @@
 vim.g.mapleader = " "
 
-vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
-vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
+vim.keymap.set("v", "N", ":m '>+1<CR>gv=gv")
+vim.keymap.set("v", "E", ":m '<-2<CR>gv=gv")
 
-vim.keymap.set("n", "J", "mzJ`z")
+vim.keymap.set("n", "N", "mzJ`z")
 vim.keymap.set("n", "<C-d>", "<C-d>zz")
 vim.keymap.set("n", "<C-u>", "<C-u>zz")
-vim.keymap.set("n", "n", "nzzzv")
-vim.keymap.set("n", "N", "Nzzzv")
+vim.keymap.set("n", "m", "nzzzv")
+vim.keymap.set("n", "M", "Nzzzv")
 
 -- greatest remap ever (Paste something without copying the selected visual)
 vim.keymap.set("x", "<leader>p", [["_dP]])
@@ -30,5 +30,7 @@ vim.keymap.set("n", "<leader>mir", "<cmd>CellularAutomaton make_it_rain<CR>");
 vim.keymap.set("n", "<leader>c", "<cmd>nohl<CR>")
 vim.keymap.set("n", "<leader>fe", "<cmd>Ex<CR>")
 
-vim.keymap.set("n", "n", "j")
-vim.keymap.set("n", "e", "k")
+-- Vim easy motion
+vim.keymap.set({ "n", "v" }, "n", "j")
+vim.keymap.set({ "n", "v" }, "e", "k")
+vim.keymap.set("n", "w", "e")
