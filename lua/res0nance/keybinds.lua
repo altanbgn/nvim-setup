@@ -4,10 +4,10 @@ vim.keymap.set("v", "N", ":m '>+1<CR>gv=gv")
 vim.keymap.set("v", "E", ":m '<-2<CR>gv=gv")
 
 vim.keymap.set("n", "K", "mzJ`z")
-vim.keymap.set("n", "<C-s>", "<C-d>zz")
-vim.keymap.set("n", "<C-u>", "<C-u>zz")
-vim.keymap.set("n", "k", "nzzzv")
-vim.keymap.set("n", "k", "Nzzzv")
+vim.keymap.set("n", "<C-n>", "<C-d>zz")
+vim.keymap.set("n", "<C-e>", "<C-u>zz")
+vim.keymap.set("n", "m", "nzzzv")
+vim.keymap.set("n", "M", "Nzzzv")
 
 -- greatest remap ever (Paste something without copying the selected visual)
 vim.keymap.set("x", "<leader>p", [["_dP]])
@@ -30,21 +30,15 @@ vim.keymap.set("n", "<leader>mir", "<cmd>CellularAutomaton make_it_rain<CR>");
 vim.keymap.set("n", "<leader>c", "<cmd>nohl<CR>")
 vim.keymap.set("n", "<leader>fe", "<cmd>Ex<CR>")
 
--- Colemak Mod DH NEST motion
+-- Colemak Mod HNEI motion
 vim.keymap.set("", "n", "j")
 vim.keymap.set("", "e", "k")
 vim.keymap.set("", "i", "l")
 vim.keymap.set("", "f", "e")
 vim.keymap.set("", "k", "n")
 vim.keymap.set("", "l", "i")
-vim.keymap.set("", "s", "d")
-vim.keymap.set("", "d", "g")
 
-vim.keymap.set("", "N", "J")
-vim.keymap.set("", "E", "K")
 vim.keymap.set("", "I", "L")
 vim.keymap.set("", "F", "E")
 vim.keymap.set("", "K", "N")
 vim.keymap.set("", "L", "I")
-vim.keymap.set("", "S", "D")
-vim.keymap.set("", "D", "G")
