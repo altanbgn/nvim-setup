@@ -43,6 +43,5 @@ autocmd("filetype", {
     -- Better navigation
     bufmap("h", "-^")
     bufmap("l", "<CR>")
-    bufmap(".", "<cmd>Ntree<CR>")
   end
 })
