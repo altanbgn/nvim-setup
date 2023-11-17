@@ -42,6 +42,8 @@ autocmd("filetype", {
 
     -- Better navigation
     bufmap("h", "-^")
+    bufmap("<Left>", "-^")
     bufmap("l", "<CR>")
+    bufmap("<Right>", "<CR>")
   end
 })

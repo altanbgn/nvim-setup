@@ -29,6 +29,7 @@ return require("packer").startup(function(use)
 
   -- Colorscheme
   use({ "rose-pine/neovim", as = "rose-pine" })
+  use("folke/tokyonight.nvim")
 
   -- Dependant
   use("nvim-lua/plenary.nvim")
