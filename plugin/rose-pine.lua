@@ -1,13 +1,14 @@
 require("rose-pine").setup({
-	--- @usage 'auto'|'main'|'moon'|'dawn'
 	variant = "moon",
 	dark_variant = "moon",
-	bold_vert_split = true,
-	dim_nc_background = false,
-	disable_background = true,
-	disable_float_background = false,
-	disable_italics = false,
+  dim_inactive_windows = false,
+  extend_background_behind_borders = true,
+  styles = {
+    bold = true,
+    italic = true,
+    transparency = true,
+  },
 })
 
 -- Set colorscheme after options
--- vim.cmd.colorscheme "rose-pine"
+vim.cmd.colorscheme "rose-pine"

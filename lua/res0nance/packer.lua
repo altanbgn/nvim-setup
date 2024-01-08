@@ -7,10 +7,12 @@ return require("packer").startup(function(use)
   -- Packer can manage itself
   use("wbthomason/packer.nvim")
 
+  -- Dependant
+  use("nvim-lua/plenary.nvim")
+
   -- Startup
   use("goolord/alpha-nvim")
 
-  use("theprimeagen/harpoon")
   use("mbbill/undotree")
   use("nvim-treesitter/nvim-treesitter-context")
   use("github/copilot.vim")
@@ -29,16 +31,16 @@ return require("packer").startup(function(use)
 
   -- Colorscheme
   use({ "rose-pine/neovim", as = "rose-pine" })
-  use("folke/tokyonight.nvim")
-
-  -- Dependant
-  use("nvim-lua/plenary.nvim")
 
   -- Git
   use("tpope/vim-fugitive")
   use("lewis6991/gitsigns.nvim")
 
   -- Utility
+  use({
+    "ThePrimeagen/harpoon",
+    branch = "harpoon2",
+  })
   use("nvim-tree/nvim-web-devicons")
   use("folke/trouble.nvim")
   use("numToStr/Comment.nvim")
