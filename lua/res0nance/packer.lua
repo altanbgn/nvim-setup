@@ -19,6 +19,9 @@ return require("packer").startup(function(use)
   use("eandrju/cellular-automaton.nvim")
   use("nvim-lualine/lualine.nvim")
 
+  -- File explorer
+  use("nvim-tree/nvim-tree.lua")
+
   -- Note taking
   use("epwalsh/obsidian.nvim")
 

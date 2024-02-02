@@ -28,4 +28,4 @@ vim.keymap.set("n", "<leader>fp", "<cmd>e ~/.config/nvim/lua/res0nance/packer.lu
 vim.keymap.set("n", "<leader>mir", "<cmd>CellularAutomaton make_it_rain<CR>");
 
 vim.keymap.set("n", "<leader>c", "<cmd>nohl<CR>")
-vim.keymap.set("n", "<leader>fe", "<cmd>Ex<CR>")
+vim.keymap.set("n", "<leader>fe", "<cmd>NvimTreeFocus<CR>")

@@ -37,6 +37,8 @@ autocmd("VimEnter", {
   end,
 })
 
+-- Keybinds for netrw
+--
 autocmd("filetype", {
   group = netrwGroup,
   pattern = "netrw",
@@ -54,4 +56,3 @@ autocmd("filetype", {
     bufmap("<Right>", "<CR>")
   end
 })
-
