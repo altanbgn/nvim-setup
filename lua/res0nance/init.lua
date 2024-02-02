@@ -30,6 +30,13 @@ autocmd("TextYankPost", {
   end,
 })
 
+autocmd("VimEnter", {
+  group = res0nanceGroup,
+  pattern = "*",
+  callback = function()
+  end,
+})
+
 autocmd("filetype", {
   group = netrwGroup,
   pattern = "netrw",
@@ -41,9 +48,10 @@ autocmd("filetype", {
     end
 
     -- Better navigation
-    bufmap("h", "-^")
-    bufmap("<Left>", "-^")
+    bufmap("h", "<CR>")
+    bufmap("<Left>", "<CR>")
     bufmap("l", "<CR>")
     bufmap("<Right>", "<CR>")
   end
 })
+
