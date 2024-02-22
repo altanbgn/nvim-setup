@@ -3,6 +3,7 @@ vim.api.nvim_set_option("clipboard", "unnamed")
 vim.g.netrw_banner = 1
 vim.g.netrw_sizestyle = "H"
 vim.g.netrw_liststyle = 3
+vim.opt.scroll = 5
 vim.opt.guicursor = ""
 
 vim.opt.cursorline = true
